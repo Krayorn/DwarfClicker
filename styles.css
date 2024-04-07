@@ -1,0 +1,28 @@
+.main {
+    display: flex;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    padding-right: 25px;
+    
+    border-right: 1px solid black;
+
+    .action {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.inventory {
+    margin-left: 25px;
+    div {
+        margin-top: 10px;
+    }
+}

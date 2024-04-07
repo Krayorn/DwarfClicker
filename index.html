@@ -4,13 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gold Miner</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="goldDisplay">Gold: 0</div>
-  <button id="mineButton">Mine Gold</button>
-  <button id="hireDwarfButton">Hire Dwarf (50 Gold)</button>
-  <button id="buyBeerButton">Buy Beer (10 Gold)</button>
-
+  <h1>Dwarf Clicker</h1>
+  <main class="main" >
+    <section class="actions" >
+      <div class="action" >
+        <button id="mineButton">Mine Gold</button>
+      </div>
+      <div class="action" >
+        <button id="hireDwarfButton"></button>
+        <p>
+          Dwarves will mine for you, as long as you provide beers for them.
+        </p>
+      </div>
+      <div class="action" >
+        <div>
+          <button id="buyBeerButton"></button>
+          <button id="buyBeer10Button"></button>
+        </div>
+        <p>
+          Beers is needed for dwarves to mine.
+        </p>
+      </div>
+      <div class="action" >
+        <button id="improvePickaxeButton"></button> 
+        <p>
+          Better pickaxes increase the gold you and the dwarves mine.
+        </p>
+      </div>
+    </section>
+    
+    <section class="inventory" >
+      <div id="goldDisplay"></div>
+      <div id="dwarfDisplay"></div>
+      <div id="beerDisplay"></div>
+      <div id="pickaxeDisplay"></div>
+    </section>
+  </main>
+  <section id="book">
+    <h2>Book of achievements</h2>
+    <div id="achievements">
+    </div>
+  </section>
   <script src="script.js"></script>
 </body>
 </html>
