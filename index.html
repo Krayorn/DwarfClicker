@@ -9,19 +9,27 @@
 <body>
   <h1>Dwarf Clicker</h1>
   <main class="main" >
-    <section class="actions" >
+    <section id="actions" >
       <div class="action" >
-        <button id="mineButton">Mine Gold</button>
-      </div>
-      <div class="action" >
-        <button id="hireDwarfButton"></button>
-        <p>
-          Dwarves will mine for you, as long as you provide beers for them.
-        </p>
+        <div>
+          <img class="icon" src="./assets/gold/gold.webp" />
+          <button id="mineButton">Mine Gold</button>
+        </div>
       </div>
       <div class="action" >
         <div>
+          <img class="icon" src="./assets/dwarf/miner.webp" />
+          <button id="hireDwarfButton"></button>
+        </div>
+          <p>
+            Dwarves will mine for you, as long as you provide beers for them.
+          </p>
+      </div>
+      <div class="action" >
+        <div>
+          <img class="icon" src="./assets/beer/beer.webp" />
           <button id="buyBeerButton"></button>
+          <img class="icon" src="./assets/beer/keg.webp" />
           <button id="buyBeer10Button"></button>
         </div>
         <p>
@@ -29,14 +37,17 @@
         </p>
       </div>
       <div class="action" >
-        <button id="improvePickaxeButton"></button> 
+        <div>
+          <img class="icon" src="./assets/tool/pickaxe.webp" />
+          <button id="improvePickaxeButton"></button> 
+        </div>
         <p>
           Better pickaxes increase the gold you and the dwarves mine.
         </p>
       </div>
     </section>
     
-    <section class="inventory" >
+    <section id="inventory" >
       <div id="goldDisplay"></div>
       <div id="dwarfDisplay"></div>
       <div id="beerDisplay"></div>
@@ -48,6 +59,7 @@
     <div id="achievements">
     </div>
   </section>
+  <button id="reset" >Start a new Clan (All progress will be lost)</button>
   <script src="script.js"></script>
 </body>
 </html>
