@@ -90,12 +90,6 @@ let availableAchievements = [
   }
 ]
 
-
-
-
-
-
-
 const inventory = document.getElementById('inventory');
 const actions = document.getElementById('actions');
 const resetButton = document.getElementById('reset');
